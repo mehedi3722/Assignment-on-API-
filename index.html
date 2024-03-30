@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jumanji | Rest Countries Api</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script src="script/script.js" defer></script>
+  </head>
+  <body class="light">
+    <header id="header">
+      <div class="title">
+        <h1>Where in the World?</h1>
+      </div>
+      <div class="themebtn">
+        <button class="btn" id="theme_btn">
+          <i class="fa fa-moon-o"></i> Dark Mode
+        </button>
+      </div>
+    </header>
+
+    <section id="contents">
+      <div class="options">
+        <div class="search_option">
+          <i class="fa fa-search"></i>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            onkeyup="SearchTerm()"
+            placeholder="Search for a country..."
+          />
+        </div>
+        <div class="filter_option">
+          <select class="region" id="region" onchange="Filter()">
+            <div class="region_options">
+              <option value="all" selected>Filter by Region</option>
+              <option value="africa">Africa</option>
+              <option value="americas">America</option>
+              <option value="asia">Asia</option>
+              <option value="europe">Europe</option>
+              <option value="oceania">Oceania</option>
+            </div>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section id="loading">
+      <h2>Please Wait...</h2>
+    </section>
+
+    <section id="country_part">
+      <!---The countries will be fetched dynamically here ---->
+    </section>
+
+    <footer id="footer">
+      <div class="coder_part">
+        <small
+          >&copy; Copy Right By
+          <a
+            href="index.html"
+            target="_blank"
+            >Mehedi Hasan</a
+          ></small
+        >
+      </div>
+    </footer>
+  </body>
+</html>
